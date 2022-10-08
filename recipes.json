@@ -1,0 +1,41 @@
+{
+	"world":{
+		"Small Meal":{
+			"Oats":4
+		},
+		"Filling Meal":{
+			"Oats":4,
+			"Deer Meat": 2
+		},
+		"Large Meal":{
+			"Oats":8,
+			"Deer Meat": 4
+		},
+		"Feast":{
+			"Oats":12,
+			"Deer Meat": 5,
+			"Rabbit Meat":2
+		}
+	},
+	"blacksmith":{
+		"Pickaxe":{
+			"Iron Ore":5,
+			"Hard wood":2
+		},
+		"Axe":{
+			"Iron Ore":5,
+			"Hard wood":2
+		},
+		"Hoe":{
+			"Iron Ore":1,
+			"Hard wood":1
+		},
+		"Bow":{
+			"Hard wood":5
+		},
+		"Arrow":{
+			"Twigs":1,
+			"Iron Ore":1
+		}
+	}
+}
