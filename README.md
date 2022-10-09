@@ -1,14 +1,15 @@
-#Project Simulata mundi
+# Project Simulata mundi
 
-###world lore: the currency is 'Yenro'
+### world lore: the currency is 'Yenro'
 
-##Current Version: 
+## Current Version: 
 Blacksmith Update
 
-##Next update: 
+## Next update: 
 Housing update
 
-##Update Plan:
+## Update Plan:
+
     1. Housing update (1 house per person, new people need a new house, area can summon new people, adds the 'Builder' job, adds a 'map')
     1.5. Aging update (People can die of old age, First long Simulation test is planned for this phase, 50-100 years)
     2. Family update (People can move in together if their relationship is high enough, they can also get a child, Inheritance and retirement is planned to be added)
