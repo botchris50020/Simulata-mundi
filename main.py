@@ -16,7 +16,6 @@ for f in fnames:
     for s in snames:
         all_names.append([f,s])
 
-
 world = area('tobi')
 farmers = 6
 hunters = 2
@@ -25,10 +24,10 @@ miners = 2
 lumberjacks = 2
 beggars = 0
 
-name = ['josh' ,'brown']
-all_names.remove(name)
-all_people.append(beggar(name[0],name[1]))
-all_people[0].divinity[1] += 1
+##name = ['josh' ,'brown']
+##all_names.remove(name)
+##all_people.append(beggar(name[0],name[1]))
+##all_people[0].divinity[1] += 1
 for i in range(farmers):
     name = random.choice(all_names)
     all_names.remove(name)
@@ -82,22 +81,23 @@ def oneday():
     for k in range(24):
         timestep(k)
 
-def oneweek():
+def week():
     for i in range(6):
         oneday()
         
-def onehundreddays():
-    for i in range(100):
-        oneday()
+def month():
+    for i in range(4):
+        week()
+    world.rent(all_people)
 
 def year():
-    for i in range(336):
-        oneday()
+    for i in range(14):
+        month()
     checkin()
         
 def checkin():
     for p in all_people:
-        print(p.name,'\t\t',p.job_title,'\t\t',p.money,'\t\t',p.hp)
+        print(f'{p.name:<25}{p.job_title:<15}{p.money:>10}    {p.hp}')
 
 def all_money():
     p_money = 0

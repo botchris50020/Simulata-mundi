@@ -19,7 +19,30 @@ class area():
             value += self.inventory[item].value*self.inventory[item].amount
         print('Static',value)
         print('Total',value+self.money)
-        
+
+    def rent(self,people):
+        for p in people:
+            if not p.dead:
+                if p.job_title == 'miner':
+                    if p.money >= 3000:
+                        p.money -= 3000
+                        self.money += 3000
+                    else:
+                        self.money += p.money
+                        p.money = 0
+                elif p.job_title == 'lumberjack':
+                    p.money -= 3000
+                    self.money += 3000
+                elif p.job_title == 'farmer':
+                    p.money -= 1000
+                    self.money += 1000
+                elif p.job_title == 'hunter':
+                    p.money -= 3000
+                    self.money += 3000
+                elif p.job_title == 'blacksmith':
+                    p.money -= 4000
+                    self.money += 4000
+
     def add_to_summary(self,item,num,sellorbuy):
         if sellorbuy == 'sell':
             if item in self.sold.keys():

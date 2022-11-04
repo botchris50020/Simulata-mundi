@@ -19,7 +19,7 @@ class npc():
                 add = random.randint(0,statpoints)
             statpoints -= add
             stats[i] += add
-
+        self.house = {}
         self.needs = {}
         self.hunger_today = 0
         self.job_title = ''
