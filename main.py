@@ -22,7 +22,7 @@ hunters = 2
 blacksmiths = 2
 miners = 2
 lumberjacks = 2
-beggars = 0
+beggars = 1
 
 ##name = ['josh' ,'brown']
 ##all_names.remove(name)

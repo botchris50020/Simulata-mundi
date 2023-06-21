@@ -1,6 +1,7 @@
 # Project Simulata mundi
 
 ### world lore: the currency is 'Yenro'
+	10 Yenro is ~1 euro
 
 ## Current Version: 
 Blacksmith Update
