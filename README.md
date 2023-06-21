@@ -23,3 +23,16 @@ Housing update
     5.2. Exp Update (Killing monsters lets you gain exp and level up)
     5.3. Mercenary Update (Villages can hire Mercenaries rather than Hiring more guards to face an imminent threat)
     5.4. War Update (Villages with enough Guards can attempt to attack another village if their relationship is bad enough)
+
+
+## Classes
+### Beggar
+main skill: speech
+Description: Begs people for money, decreasing their opinion of the beggar
+
+### Blacksmith
+main skill: 
+Farmer
+hunter
+lumberjack
+miner

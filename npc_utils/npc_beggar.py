@@ -8,9 +8,9 @@ class beggar(npc):
         super().__init__(fname,sname)
         self.schedule = ['sleep','sleep','sleep','sleep','sleep','sleep','talk','talk','talk','talk','talk','talk','talk','talk','talk','talk','talk','talk','buy','talk','talk','eat','sleep','sleep']
         self.job_title = 'beggar'
+        self.begging_history = {}
     def whotalk(self,people):
         if self.stamina[0] > 5:
-            
             options = []
             for p in people:
                 if p.hp[0] > 0:
@@ -30,6 +30,10 @@ class beggar(npc):
                         if person.money > 10 and self.name in person.relationships.keys():
                             #print(max(10,int(person.money*((self.speech[0]*self.divinity[0])/100000))))
                             money_taken = max(12,int(person.money*((self.speech[0]*self.divinity[0])/400000)))
+                            if not person.name in self.begging_history.keys():
+                                self.begging_history[person.name] = [[money_taken,person.money]]
+                            else:
+                                self.begging_history[person.name].append([money_taken,person.money])
                             self.money += money_taken
                             self.relationships[person.name][1] += 1
                             person.money -= money_taken

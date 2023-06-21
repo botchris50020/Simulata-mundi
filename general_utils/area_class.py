@@ -31,17 +31,33 @@ class area():
                         self.money += p.money
                         p.money = 0
                 elif p.job_title == 'lumberjack':
-                    p.money -= 3000
-                    self.money += 3000
+                    if p.money >= 3000:
+                        p.money -= 3000
+                        self.money += 3000
+                    else:
+                        self.money += p.money
+                        p.money = 0
                 elif p.job_title == 'farmer':
-                    p.money -= 1000
-                    self.money += 1000
+                    if p.money >= 1000:
+                        p.money -= 1000
+                        self.money += 1000
+                    else:
+                        self.money += p.money
+                        p.money = 0
                 elif p.job_title == 'hunter':
-                    p.money -= 3000
-                    self.money += 3000
+                    if p.money >= 3000:
+                        p.money -= 3000
+                        self.money += 3000
+                    else:
+                        self.money += p.money
+                        p.money = 0
                 elif p.job_title == 'blacksmith':
-                    p.money -= 4000
-                    self.money += 4000
+                    if p.money >= 4000:
+                        p.money -= 4000
+                        self.money += 4000
+                    else:
+                        self.money += p.money
+                        p.money = 0
 
     def add_to_summary(self,item,num,sellorbuy):
         if sellorbuy == 'sell':

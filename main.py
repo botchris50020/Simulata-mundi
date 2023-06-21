@@ -96,8 +96,8 @@ def year():
     checkin()
         
 def checkin():
-    for p in all_people:
-        print(f'{p.name:<25}{p.job_title:<15}{p.money:>10}    {p.hp}')
+    for i,p in enumerate(all_people):
+        print(f'{i:<2} {p.name:<25}{p.job_title:<15}{p.money:>10}    {p.hp}')
 
 def all_money():
     p_money = 0
